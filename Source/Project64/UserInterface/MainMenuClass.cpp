@@ -526,7 +526,7 @@ bool CMainMenu::ProcessMessage(HWND hWnd, DWORD /*FromAccelerator*/, DWORD MenuI
     case ID_HELP_ABOUTSETTINGFILES: m_Gui->AboutIniBox(); break;
     case ID_NETPLAY_REPLACESAVES:
         if (!g_Settings->LoadBool(GameRunning_CPU_Running))
-            ShellExecute(NULL, "open", "Replace.bat", NULL, NULL, SW_SHOWMINIMIZED);
+            ShellExecute(NULL, "open", "Replace.bat", NULL, NULL, SW_SHOWMAXIMIZED);
         else
             g_Notify->DisplayMessage(5, "Saves can only be replaced when a game is not running.");
         break;
