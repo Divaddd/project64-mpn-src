@@ -338,6 +338,22 @@
 #define IDC_IPL_DIR                     1220
 #define IDC_SELECT_IPL_DIR              1221
 #define IDC_IPLDIR_TXT                  1222
+#define IDC_NORA						1223
+#define IDC_CELERIZER					1224
+#define IDC_AQZ							1225
+#define IDC_RAIN						1226
+#define IDC_LAVE						1227
+#define IDC_ZILMAR_DETAILS				1228
+#define IDC_JABO_DETAILS 				1229
+#define IDC_SMIFF_DETAILS				1230
+#define IDC_GENT_DETAILS				1231
+#define IDC_NORA_DETAILS				1232
+#define IDC_CELERIZER_DETAILS			1233
+#define IDC_AQZ_DETAILS					1234
+#define IDC_RAIN_DETAILS				1235
+#define IDC_LAVE_DETAILS				1236
+#define IDC_PJ64MPN_TEAM				1237
+
 #define ID_POPUP_SHOWINMEMORYVIEWER     40005
 #define ID_POPUPMENU_PLAYGAMEWITHDISK   40008
 #define ID_POPUPMENU_ROMDIRECTORY       40137

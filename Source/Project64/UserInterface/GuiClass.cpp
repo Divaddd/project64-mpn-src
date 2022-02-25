@@ -1199,16 +1199,27 @@ DWORD CALLBACK AboutBoxProc(HWND hWnd, DWORD uMsg, DWORD wParam, DWORD /*lParam*
             SendDlgItemMessage(hWnd, IDC_VERSION, WM_SETFONT, (WPARAM)hTextFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_TEAM, WM_SETFONT, (WPARAM)hPageHeadingFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_THANKS, WM_SETFONT, (WPARAM)hPageHeadingFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_PJ64MPN_TEAM, WM_SETFONT, (WPARAM)hPageHeadingFont, TRUE);
 
             SendDlgItemMessage(hWnd, IDC_ZILMAR, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_JABO, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_SMIFF, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_GENT, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_NORA, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_CELERIZER, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_AQZ, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_RAIN, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_LAVE, WM_SETFONT, (WPARAM)hAuthorFont, TRUE);
 
             SendDlgItemMessage(hWnd, IDC_ZILMAR_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_JABO_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_SMIFF_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
             SendDlgItemMessage(hWnd, IDC_GENT_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_NORA_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_CELERIZER_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_AQZ_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_RAIN_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
+            SendDlgItemMessage(hWnd, IDC_LAVE_DETAILS, WM_SETFONT, (WPARAM)hTextFont, TRUE);
 
             SendDlgItemMessage(hWnd, IDC_THANK_LIST, WM_SETFONT, (WPARAM)hTextFont, TRUE);
 
