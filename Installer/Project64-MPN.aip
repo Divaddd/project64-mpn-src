@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="12.2.1" version="12.2.1" Modules="professional" RootPath="." Language="en" Id="{854BDB05-27DC-468D-BBCA-02E672D643D7}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_FrameBtns" Value="default" MsiKey="AI_FrameBtns"/>
+    <ROW Property="AI_FrameColor" Value="powderblue" MultiBuildValue="DefaultBuild:darkolivegreen" MsiKey="AI_FrameColor"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="Project64-MPN"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="Project64MPN.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="ARPURLINFOABOUT" Value="discord.gg/marioparty"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="discord.gg/marioparty"/>
+    <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="LogoIcon" Value="externalui.ico" MultiBuildValue="DefaultBuild:Project64MPN.ico" Type="1" MsiKey="LogoIcon"/>
+    <ROW Property="Manufacturer" Value="Mario Party Netplay"/>
+    <ROW Property="ProductCode" Value="1033:{0EE84C23-DE35-408E-A723-E5E55C914B3D} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Project64-MPN"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{163E9BE2-FAE7-4C2A-A856-FD5F2C7831D0}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Audio_Dir" Directory_Parent="Plugin_Dir" DefaultDir="Audio"/>
+    <ROW Directory="Backup_Dir" Directory_Parent="Config_Dir" DefaultDir="Backup"/>
+    <ROW Directory="CommonAppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="COMMON~1|CommonAppDataFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Config_Dir" Directory_Parent="project64mpn1main_Dir" DefaultDir="Config"/>
+    <ROW Directory="Extras_Dir" Directory_Parent="project64mpn1main_Dir" DefaultDir="Extras"/>
+    <ROW Directory="GFX_Dir" Directory_Parent="Plugin_Dir" DefaultDir="GFX"/>
+    <ROW Directory="Games_Dir" Directory_Parent="project64mpn1main_Dir" DefaultDir="Games"/>
+    <ROW Directory="Input_Dir" Directory_Parent="Plugin_Dir" DefaultDir="Input"/>
+    <ROW Directory="MarioParty2_Dir" Directory_Parent="hires_texture_Dir" DefaultDir="MARIOP~2|MarioParty2"/>
+    <ROW Directory="MarioParty3CostumePartyv1.1Patcher_Dir" Directory_Parent="Extras_Dir" DefaultDir="MARIOP~1.1PA|Mario Party 3 Costume Party v1.1 Patcher"/>
+    <ROW Directory="MarioParty3_Dir" Directory_Parent="hires_texture_Dir" DefaultDir="MARIOP~3|MarioParty3"/>
+    <ROW Directory="MarioParty_Dir" Directory_Parent="hires_texture_Dir" DefaultDir="MARIOP~1|MarioParty"/>
+    <ROW Directory="Plugin_Dir" Directory_Parent="project64mpn1main_Dir" DefaultDir="Plugin"/>
+    <ROW Directory="RSP_Dir" Directory_Parent="Plugin_Dir" DefaultDir="RSP"/>
+    <ROW Directory="Save_Dir" Directory_Parent="project64mpn1main_Dir" DefaultDir="Save"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Updater_Dir" Directory_Parent="Plugin_Dir" DefaultDir="Updater"/>
+    <ROW Directory="hires_texture_Dir" Directory_Parent="GFX_Dir" DefaultDir="HIRES_~1|hires_texture"/>
+    <ROW Directory="project64mpn1main_Dir" Directory_Parent="APPDIR" DefaultDir="PROJEC~1|project64-mpn-1-main"/>
+    <ROW Directory="project64mpn_Dir" Directory_Parent="CommonAppDataFolder" DefaultDir="PROJEC~1|project64-mpn"/>
+    <ROW Directory="regid.199509.com.example_Dir" Directory_Parent="CommonAppDataFolder" DefaultDir="REGID1~1.EXA|regid.1995-09.com.example"/>
+    <ROW Directory="translations_Dir" Directory_Parent="GFX_Dir" DefaultDir="TRANSL~1|translations"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{E486A310-6D6C-40F6-B007-AE975E7E0B62}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_ExePath" ComponentId="{67F6860B-B72B-4D56-A2C1-9B3B551FE938}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{5D694F20-9B07-4417-984A-CC2AB33EABDD}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AziAudioXA2.dll" ComponentId="{AA8FE6C0-4E87-4FC8-8483-D525736CA363}" Directory_="Audio_Dir" Attributes="0" KeyPath="AziAudioXA2.dll"/>
+    <ROW Component="EternalStarWarpMap.png" ComponentId="{1A0079E0-B45D-4894-9AB3-D6E0BD064789}" Directory_="Extras_Dir" Attributes="0" KeyPath="EternalStarWarpMap.png" Type="0"/>
+    <ROW Component="GLideN64.custom.ini" ComponentId="{E366755F-F48D-41E6-BD8B-40D5577A45AC}" Directory_="GFX_Dir" Attributes="0" KeyPath="GLideN64.custom.ini" Type="0"/>
+    <ROW Component="GLideN64.dll" ComponentId="{596E9CC6-2F93-4ECD-BD11-1873AAFCA75F}" Directory_="GFX_Dir" Attributes="0" KeyPath="GLideN64.dll"/>
+    <ROW Component="Jabo_Direct3D8.dll" ComponentId="{DF9D6B62-C04B-4840-894B-31CDB40D8197}" Directory_="GFX_Dir" Attributes="0" KeyPath="Jabo_Direct3D8.dll"/>
+    <ROW Component="Jabo_Dsound.dll" ComponentId="{52400680-FB0E-4820-A04D-28DC8184AD3E}" Directory_="Audio_Dir" Attributes="0" KeyPath="Jabo_Dsound.dll"/>
+    <ROW Component="MarioParty1633C95403_all.png" ComponentId="{215781F6-9507-4086-B0BC-B9C1318BDA32}" Directory_="MarioParty_Dir" Attributes="0" KeyPath="MarioParty1633C95403_all.png" Type="0"/>
+    <ROW Component="MarioParty26C306F3E02_all.png" ComponentId="{C5A3D044-5F67-468B-9387-E7096030AFDB}" Directory_="MarioParty2_Dir" Attributes="0" KeyPath="MarioParty26C306F3E02_all.png" Type="0"/>
+    <ROW Component="MarioParty32146C7BF02_all.png" ComponentId="{12F6AEFF-4C3C-4D2D-A423-AA2EFEAA23A7}" Directory_="MarioParty3_Dir" Attributes="0" KeyPath="MarioParty32146C7BF02_all.png" Type="0"/>
+    <ROW Component="NRage_DInput.dll" ComponentId="{53C6EBF4-E424-4BDB-BA05-0283936CAE7D}" Directory_="Input_Dir" Attributes="0" KeyPath="NRage_DInput.dll"/>
+    <ROW Component="NRage_DInput8_V2.dll" ComponentId="{D9FB2D81-01DC-4A5B-BA7B-860A00E244D1}" Directory_="Input_Dir" Attributes="0" KeyPath="NRage_DInput8_V2.dll"/>
+    <ROW Component="NRage_XInput.dll" ComponentId="{1B474E38-E427-4FDB-9FCB-E880896EE571}" Directory_="Input_Dir" Attributes="0" KeyPath="NRage_XInput.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{0D853FEA-6190-4325-8226-25F36EB83F27}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Project64.cfg" ComponentId="{E5C9E3AB-631B-4F43-83AF-FD755C4EF91C}" Directory_="Config_Dir" Attributes="0" KeyPath="Project64.cfg" Type="0"/>
+    <ROW Component="Project64MPN.exe" ComponentId="{034F4DA8-6FA1-431A-89E2-084C6F8F36A2}" Directory_="project64mpn1main_Dir" Attributes="0" KeyPath="Project64MPN.exe"/>
+    <ROW Component="Project64Video.dll" ComponentId="{6F9DAE8C-ED24-41C5-AA64-E090BB82767F}" Directory_="GFX_Dir" Attributes="0" KeyPath="Project64Video.dll"/>
+    <ROW Component="RSP1.7.dll" ComponentId="{6FC095F7-5DEA-4AF7-A26D-4CAACC8D552A}" Directory_="RSP_Dir" Attributes="0" KeyPath="RSP1.7.dll"/>
+    <ROW Component="Replace.bat" ComponentId="{B176C412-7226-4DA7-89CB-4BD3770EDE74}" Directory_="project64mpn1main_Dir" Attributes="0" KeyPath="Replace.bat" Type="0"/>
+    <ROW Component="SNOWBOARDING.sra" ComponentId="{8A8E5029-5C94-44A1-B7D3-DF1343C96571}" Directory_="Backup_Dir" Attributes="0" KeyPath="SNOWBOARDING.sra" Type="0"/>
+    <ROW Component="SNOWBOARDING.sra_1" ComponentId="{DD93679E-533A-4B0D-BBDB-912F083D7237}" Directory_="Save_Dir" Attributes="0" KeyPath="SNOWBOARDING.sra_1" Type="0"/>
+    <ROW Component="data.xdelta3" ComponentId="{BA7944E5-2C39-442C-8F36-EA34BEFE575F}" Directory_="MarioParty3CostumePartyv1.1Patcher_Dir" Attributes="0" KeyPath="data.xdelta3" Type="0"/>
+    <ROW Component="filesthatshouldbeinhere.txt" ComponentId="{A3DB604E-07F9-4806-ABD4-702FB5B9F1C2}" Directory_="Games_Dir" Attributes="0" KeyPath="filesthatshouldbeinhere.txt" Type="0"/>
+    <ROW Component="gliden64_de.Lang" ComponentId="{303EBDCD-898A-451E-BA43-B45A7A776384}" Directory_="translations_Dir" Attributes="0" KeyPath="gliden64_de.Lang" Type="0"/>
+    <ROW Component="netplay_input_plugin.dll" ComponentId="{472AA131-7343-4B24-8AB7-106BB06E1F42}" Directory_="Input_Dir" Attributes="0" KeyPath="netplay_input_plugin.dll"/>
+    <ROW Component="netplay_input_plugin.ini" ComponentId="{F488CD6A-5CC0-4244-B0E4-C0BCC4665D07}" Directory_="Input_Dir" Attributes="0" KeyPath="netplay_input_plugin.ini" Type="0"/>
+    <ROW Component="project64mpn" ComponentId="{59F801AF-CF00-44C6-B4B5-C108BF581F4B}" Directory_="project64mpn_Dir" Attributes="0"/>
+    <ROW Component="wget.exe" ComponentId="{4B7B9DE8-C239-4869-ADFD-76FBF7B0CC98}" Directory_="Updater_Dir" Attributes="0" KeyPath="wget.exe"/>
+    <ROW Component="xdelta33.0.11i686.exe" ComponentId="{08765801-D6C3-4F5D-8B84-D5192545B215}" Directory_="MarioParty3CostumePartyv1.1Patcher_Dir" Attributes="0" KeyPath="xdelta33.0.11i686.exe"/>
+    <ROW Component="z.dll" ComponentId="{337B40E0-D501-438B-84FA-90A9D6D2CD4A}" Directory_="Updater_Dir" Attributes="256" KeyPath="z.dll"/>
+    <ROW Component="z.exe" ComponentId="{1903FC34-7A71-40F6-BC7D-1E39A94FE40C}" Directory_="Updater_Dir" Attributes="256" KeyPath="z.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_CustomARPName AI_ExePath APPDIR AziAudioXA2.dll EternalStarWarpMap.png GLideN64.custom.ini GLideN64.dll Jabo_Direct3D8.dll Jabo_Dsound.dll MarioParty1633C95403_all.png MarioParty26C306F3E02_all.png MarioParty32146C7BF02_all.png NRage_DInput.dll NRage_DInput8_V2.dll NRage_XInput.dll ProductInformation Project64.cfg Project64MPN.exe Project64Video.dll RSP1.7.dll Replace.bat SNOWBOARDING.sra SNOWBOARDING.sra_1 data.xdelta3 filesthatshouldbeinhere.txt gliden64_de.Lang netplay_input_plugin.dll netplay_input_plugin.ini project64mpn wget.exe xdelta33.0.11i686.exe z.dll z.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AziAudioXA2.dll" Component_="AziAudioXA2.dll" FileName="AZIAUD~1.DLL|AziAudioXA2.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Audio\AziAudioXA2.dll" SelfReg="false" NextFile="Jabo_Dsound.dll"/>
+    <ROW File="BANJOTOOIE.eep" Component_="SNOWBOARDING.sra" FileName="BANJOT~1.EEP|BANJO TOOIE.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\BANJO TOOIE.eep" SelfReg="false" NextFile="BOMBERMAN64U.eep"/>
+    <ROW File="BANJOTOOIE.eep_1" Component_="SNOWBOARDING.sra_1" FileName="BANJOT~1.EEP|BANJO TOOIE.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\BANJO TOOIE.eep" SelfReg="false" NextFile="BOMBERMAN64U.eep_1"/>
+    <ROW File="BOMBERMAN64U.eep" Component_="SNOWBOARDING.sra" FileName="BOMBER~1.EEP|BOMBERMAN64U.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\BOMBERMAN64U.eep" SelfReg="false" NextFile="CONKERBFD.eep"/>
+    <ROW File="BOMBERMAN64U.eep_1" Component_="SNOWBOARDING.sra_1" FileName="BOMBER~1.EEP|BOMBERMAN64U.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\BOMBERMAN64U.eep" SelfReg="false" NextFile="CONKERBFD.eep_1"/>
+    <ROW File="CONKERBFD.eep" Component_="SNOWBOARDING.sra" FileName="CONKER~1.EEP|CONKER BFD.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\CONKER BFD.eep" SelfReg="false" NextFile="customrobo.eep"/>
+    <ROW File="CONKERBFD.eep_1" Component_="SNOWBOARDING.sra_1" FileName="CONKER~1.EEP|CONKER BFD.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\CONKER BFD.eep" SelfReg="false" NextFile="customrobo.eep_1"/>
+    <ROW File="DONKEYKONG64.eep" Component_="SNOWBOARDING.sra" FileName="DONKEY~1.EEP|DONKEY KONG 64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\DONKEY KONG 64.eep" SelfReg="false" NextFile="DR.MARIO64.eep"/>
+    <ROW File="DONKEYKONG64.eep_1" Component_="SNOWBOARDING.sra_1" FileName="DONKEY~1.EEP|DONKEY KONG 64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\DONKEY KONG 64.eep" SelfReg="false" NextFile="DR.MARIO64.eep_1"/>
+    <ROW File="DR.MARIO64.eep" Component_="SNOWBOARDING.sra" FileName="DRMARI~1.EEP|DR.MARIO 64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\DR.MARIO 64.eep" SelfReg="false" NextFile="FZEROX.sra"/>
+    <ROW File="DR.MARIO64.eep_1" Component_="SNOWBOARDING.sra_1" FileName="DRMARI~1.EEP|DR.MARIO 64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\DR.MARIO 64.eep" SelfReg="false" NextFile="FZEROX.sra_1"/>
+    <ROW File="DiddyKongRacing.eep" Component_="SNOWBOARDING.sra" FileName="DIDDYK~1.EEP|Diddy Kong Racing.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Diddy Kong Racing.eep" SelfReg="false" NextFile="DiddyKongRacing.mpk"/>
+    <ROW File="DiddyKongRacing.eep_1" Component_="SNOWBOARDING.sra_1" FileName="DIDDYK~1.EEP|Diddy Kong Racing.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Diddy Kong Racing.eep" SelfReg="false" NextFile="DiddyKongRacing.mpk_1"/>
+    <ROW File="DiddyKongRacing.mpk" Component_="SNOWBOARDING.sra" FileName="DIDDYK~1.MPK|Diddy Kong Racing.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Diddy Kong Racing.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_1.mpk"/>
+    <ROW File="DiddyKongRacing.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="DIDDYK~1.MPK|Diddy Kong Racing.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Diddy Kong Racing.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_1.mpk_1"/>
+    <ROW File="DiddyKongRacing_Cont_1.mpk" Component_="SNOWBOARDING.sra" FileName="DIDDYK~2.MPK|Diddy Kong Racing_Cont_1.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Diddy Kong Racing_Cont_1.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_2.mpk"/>
+    <ROW File="DiddyKongRacing_Cont_1.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="DIDDYK~2.MPK|Diddy Kong Racing_Cont_1.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Diddy Kong Racing_Cont_1.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_2.mpk_1"/>
+    <ROW File="DiddyKongRacing_Cont_2.mpk" Component_="SNOWBOARDING.sra" FileName="DIDDYK~3.MPK|Diddy Kong Racing_Cont_2.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Diddy Kong Racing_Cont_2.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_3.mpk"/>
+    <ROW File="DiddyKongRacing_Cont_2.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="DIDDYK~3.MPK|Diddy Kong Racing_Cont_2.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Diddy Kong Racing_Cont_2.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_3.mpk_1"/>
+    <ROW File="DiddyKongRacing_Cont_3.mpk" Component_="SNOWBOARDING.sra" FileName="DIDDYK~4.MPK|Diddy Kong Racing_Cont_3.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Diddy Kong Racing_Cont_3.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_4.mpk"/>
+    <ROW File="DiddyKongRacing_Cont_3.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="DIDDYK~4.MPK|Diddy Kong Racing_Cont_3.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Diddy Kong Racing_Cont_3.mpk" SelfReg="false" NextFile="DiddyKongRacing_Cont_4.mpk_1"/>
+    <ROW File="DiddyKongRacing_Cont_4.mpk" Component_="SNOWBOARDING.sra" FileName="DIDDYK~5.MPK|Diddy Kong Racing_Cont_4.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Diddy Kong Racing_Cont_4.mpk" SelfReg="false" NextFile="DONKEYKONG64.eep"/>
+    <ROW File="DiddyKongRacing_Cont_4.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="DIDDYK~5.MPK|Diddy Kong Racing_Cont_4.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Diddy Kong Racing_Cont_4.mpk" SelfReg="false" NextFile="DONKEYKONG64.eep_1"/>
+    <ROW File="EternalStarWarpMap.png" Component_="EternalStarWarpMap.png" FileName="ETERNA~1.PNG|Eternal Star Warp Map.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Extras\Eternal Star Warp Map.png" SelfReg="false" NextFile="data.xdelta3"/>
+    <ROW File="FZEROX.sra" Component_="SNOWBOARDING.sra" FileName="F-ZERO~1.SRA|F-ZERO X.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\F-ZERO X.sra" SelfReg="false" NextFile="GOLDENEYE.eep"/>
+    <ROW File="FZEROX.sra_1" Component_="SNOWBOARDING.sra_1" FileName="F-ZERO~1.SRA|F-ZERO X.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\F-ZERO X.sra" SelfReg="false" NextFile="GOLDENEYE.eep_1"/>
+    <ROW File="GLideN64.custom.ini" Component_="GLideN64.custom.ini" FileName="GLIDEN~1.INI|GLideN64.custom.ini" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\GLideN64.custom.ini" SelfReg="false" NextFile="GLideN64.ini"/>
+    <ROW File="GLideN64.dll" Component_="GLideN64.dll" FileName="GLideN64.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\GLideN64.dll" SelfReg="false" NextFile="MarioParty1633C95403_all.png"/>
+    <ROW File="GLideN64.ini" Component_="GLideN64.custom.ini" FileName="GLideN64.ini" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\GLideN64.ini" SelfReg="false" NextFile="netplay_input_plugin.ini"/>
+    <ROW File="GOLDENEYE.eep" Component_="SNOWBOARDING.sra" FileName="GOLDEN~1.EEP|GOLDENEYE.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\GOLDENEYE.eep" SelfReg="false" NextFile="Kirby64.eep"/>
+    <ROW File="GOLDENEYE.eep_1" Component_="SNOWBOARDING.sra_1" FileName="GOLDEN~1.EEP|GOLDENEYE.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\GOLDENEYE.eep" SelfReg="false" NextFile="Kirby64.eep_1"/>
+    <ROW File="Jabo_Direct3D8.dll" Component_="Jabo_Direct3D8.dll" FileName="JABO_D~1.DLL|Jabo_Direct3D8.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\Jabo_Direct3D8.dll" SelfReg="false" NextFile="Project64Video.dll"/>
+    <ROW File="Jabo_Dsound.dll" Component_="Jabo_Dsound.dll" FileName="JABO_D~1.DLL|Jabo_Dsound.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Audio\Jabo_Dsound.dll" SelfReg="false" NextFile="GLideN64.dll"/>
+    <ROW File="Kirby64.eep" Component_="SNOWBOARDING.sra" FileName="Kirby64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\Kirby64.eep" SelfReg="false" NextFile="MarioGolf64.sra"/>
+    <ROW File="Kirby64.eep_1" Component_="SNOWBOARDING.sra_1" FileName="Kirby64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\Kirby64.eep" SelfReg="false" NextFile="MarioGolf64.sra_1"/>
+    <ROW File="MARIOKART64.eep" Component_="SNOWBOARDING.sra" FileName="MARIOK~1.EEP|MARIOKART64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MARIOKART64.eep" SelfReg="false" NextFile="MARIOKART64_Cont_1.mpk"/>
+    <ROW File="MARIOKART64.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOK~1.EEP|MARIOKART64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MARIOKART64.eep" SelfReg="false" NextFile="MARIOKART64_Cont_1.mpk_1"/>
+    <ROW File="MARIOKART64_Cont_1.mpk" Component_="SNOWBOARDING.sra" FileName="MARIOK~1.MPK|MARIOKART64_Cont_1.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MARIOKART64_Cont_1.mpk" SelfReg="false" NextFile="MARIOKART64_Cont_2.mpk"/>
+    <ROW File="MARIOKART64_Cont_1.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOK~1.MPK|MARIOKART64_Cont_1.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MARIOKART64_Cont_1.mpk" SelfReg="false" NextFile="MARIOKART64_Cont_2.mpk_1"/>
+    <ROW File="MARIOKART64_Cont_2.mpk" Component_="SNOWBOARDING.sra" FileName="MARIOK~2.MPK|MARIOKART64_Cont_2.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MARIOKART64_Cont_2.mpk" SelfReg="false" NextFile="MARIOKART64_Cont_3.mpk"/>
+    <ROW File="MARIOKART64_Cont_2.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOK~2.MPK|MARIOKART64_Cont_2.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MARIOKART64_Cont_2.mpk" SelfReg="false" NextFile="MARIOKART64_Cont_3.mpk_1"/>
+    <ROW File="MARIOKART64_Cont_3.mpk" Component_="SNOWBOARDING.sra" FileName="MARIOK~3.MPK|MARIOKART64_Cont_3.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MARIOKART64_Cont_3.mpk" SelfReg="false" NextFile="MARIOKART64_Cont_4.mpk"/>
+    <ROW File="MARIOKART64_Cont_3.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOK~3.MPK|MARIOKART64_Cont_3.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MARIOKART64_Cont_3.mpk" SelfReg="false" NextFile="MARIOKART64_Cont_4.mpk_1"/>
+    <ROW File="MARIOKART64_Cont_4.mpk" Component_="SNOWBOARDING.sra" FileName="MARIOK~4.MPK|MARIOKART64_Cont_4.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MARIOKART64_Cont_4.mpk" SelfReg="false" NextFile="MarioParty.eep"/>
+    <ROW File="MARIOKART64_Cont_4.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOK~4.MPK|MARIOKART64_Cont_4.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MARIOKART64_Cont_4.mpk" SelfReg="false" NextFile="MarioParty.eep_1"/>
+    <ROW File="MICKEYUSA.eep" Component_="SNOWBOARDING.sra" FileName="MICKEY~1.EEP|MICKEY USA.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MICKEY USA.eep" SelfReg="false" NextFile="MICKEY_USA_Cont_1.mpk"/>
+    <ROW File="MICKEYUSA.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MICKEY~1.EEP|MICKEY USA.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MICKEY USA.eep" SelfReg="false" NextFile="MICKEY_USA_Cont_1.mpk_1"/>
+    <ROW File="MICKEY_USA_Cont_1.mpk" Component_="SNOWBOARDING.sra" FileName="MICKEY~1.MPK|MICKEY_USA_Cont_1.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MICKEY_USA_Cont_1.mpk" SelfReg="false" NextFile="MICKEY_USA_Cont_2.mpk"/>
+    <ROW File="MICKEY_USA_Cont_1.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MICKEY~1.MPK|MICKEY_USA_Cont_1.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MICKEY_USA_Cont_1.mpk" SelfReg="false" NextFile="MICKEY_USA_Cont_2.mpk_1"/>
+    <ROW File="MICKEY_USA_Cont_2.mpk" Component_="SNOWBOARDING.sra" FileName="MICKEY~2.MPK|MICKEY_USA_Cont_2.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MICKEY_USA_Cont_2.mpk" SelfReg="false" NextFile="MICKEY_USA_Cont_3.mpk"/>
+    <ROW File="MICKEY_USA_Cont_2.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MICKEY~2.MPK|MICKEY_USA_Cont_2.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MICKEY_USA_Cont_2.mpk" SelfReg="false" NextFile="MICKEY_USA_Cont_3.mpk_1"/>
+    <ROW File="MICKEY_USA_Cont_3.mpk" Component_="SNOWBOARDING.sra" FileName="MICKEY~3.MPK|MICKEY_USA_Cont_3.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MICKEY_USA_Cont_3.mpk" SelfReg="false" NextFile="MICKEY_USA_Cont_4.mpk"/>
+    <ROW File="MICKEY_USA_Cont_3.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MICKEY~3.MPK|MICKEY_USA_Cont_3.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MICKEY_USA_Cont_3.mpk" SelfReg="false" NextFile="MICKEY_USA_Cont_4.mpk_1"/>
+    <ROW File="MICKEY_USA_Cont_4.mpk" Component_="SNOWBOARDING.sra" FileName="MICKEY~4.MPK|MICKEY_USA_Cont_4.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MICKEY_USA_Cont_4.mpk" SelfReg="false" NextFile="POKEMONSTADIUM2.fla"/>
+    <ROW File="MICKEY_USA_Cont_4.mpk_1" Component_="SNOWBOARDING.sra_1" FileName="MICKEY~4.MPK|MICKEY_USA_Cont_4.mpk" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MICKEY_USA_Cont_4.mpk" SelfReg="false" NextFile="POKEMONSTADIUM2.fla_1"/>
+    <ROW File="MarioGolf64.sra" Component_="SNOWBOARDING.sra" FileName="MARIOG~1.SRA|MarioGolf64.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MarioGolf64.sra" SelfReg="false" NextFile="MARIOKART64.eep"/>
+    <ROW File="MarioGolf64.sra_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOG~1.SRA|MarioGolf64.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MarioGolf64.sra" SelfReg="false" NextFile="MARIOKART64.eep_1"/>
+    <ROW File="MarioParty.eep" Component_="SNOWBOARDING.sra" FileName="MARIOP~1.EEP|MarioParty.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MarioParty.eep" SelfReg="false" NextFile="MarioParty2.eep"/>
+    <ROW File="MarioParty.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOP~1.EEP|MarioParty.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MarioParty.eep" SelfReg="false" NextFile="MarioParty2.eep_1"/>
+    <ROW File="MarioParty1633C95403_all.png" Component_="MarioParty1633C95403_all.png" FileName="MARIOP~1.PNG|MarioParty#1633C954#0#3_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty\MarioParty#1633C954#0#3_all.png" SelfReg="false" NextFile="MarioParty2119D00C03_all.png"/>
+    <ROW File="MarioParty2.eep" Component_="SNOWBOARDING.sra" FileName="MARIOP~2.EEP|MarioParty2.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MarioParty2.eep" SelfReg="false" NextFile="MarioParty3Costume.eep"/>
+    <ROW File="MarioParty2.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOP~2.EEP|MarioParty2.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MarioParty2.eep" SelfReg="false" NextFile="MarioParty3Costume.eep_1"/>
+    <ROW File="MarioParty2119D00C03_all.png" Component_="MarioParty1633C95403_all.png" FileName="MARIOP~2.PNG|MarioParty#2119D00C#0#3_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty\MarioParty#2119D00C#0#3_all.png" SelfReg="false" NextFile="MarioPartyA5BFC10003_all.png"/>
+    <ROW File="MarioParty26C306F3E02_all.png" Component_="MarioParty26C306F3E02_all.png" FileName="MARIOP~1.PNG|MarioParty2#6C306F3E#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty2\MarioParty2#6C306F3E#0#2_all.png" SelfReg="false" NextFile="MarioParty27E1257E102_all.png"/>
+    <ROW File="MarioParty27E1257E102_all.png" Component_="MarioParty26C306F3E02_all.png" FileName="MARIOP~2.PNG|MarioParty2#7E1257E1#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty2\MarioParty2#7E1257E1#0#2_all.png" SelfReg="false" NextFile="MarioParty28051C4A902_all.png"/>
+    <ROW File="MarioParty28051C4A902_all.png" Component_="MarioParty26C306F3E02_all.png" FileName="MARIOP~3.PNG|MarioParty2#8051C4A9#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty2\MarioParty2#8051C4A9#0#2_all.png" SelfReg="false" NextFile="MarioParty2D17721B702_all.png"/>
+    <ROW File="MarioParty2D17721B702_all.png" Component_="MarioParty26C306F3E02_all.png" FileName="MARIOP~4.PNG|MarioParty2#D17721B7#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty2\MarioParty2#D17721B7#0#2_all.png" SelfReg="false" NextFile="MarioParty32146C7BF02_all.png"/>
+    <ROW File="MarioParty3.eep" Component_="SNOWBOARDING.sra" FileName="MARIOP~4.EEP|MarioParty3.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MarioParty3.eep" SelfReg="false" NextFile="MarioTennis.eep"/>
+    <ROW File="MarioParty3.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOP~4.EEP|MarioParty3.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MarioParty3.eep" SelfReg="false" NextFile="MarioTennis.eep_1"/>
+    <ROW File="MarioParty32146C7BF02_all.png" Component_="MarioParty32146C7BF02_all.png" FileName="MARIOP~1.PNG|MarioParty3#2146C7BF#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty3\MarioParty3#2146C7BF#0#2_all.png" SelfReg="false" NextFile="MarioParty328A3A82202_all.png"/>
+    <ROW File="MarioParty328A3A82202_all.png" Component_="MarioParty32146C7BF02_all.png" FileName="MARIOP~2.PNG|MarioParty3#28A3A822#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty3\MarioParty3#28A3A822#0#2_all.png" SelfReg="false" NextFile="MarioParty3D0FB154C02_all.png"/>
+    <ROW File="MarioParty3Costume.eep" Component_="SNOWBOARDING.sra" FileName="MARIOP~3.EEP|MarioParty3(Costume).eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MarioParty3(Costume).eep" SelfReg="false" NextFile="MarioParty3.eep"/>
+    <ROW File="MarioParty3Costume.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOP~3.EEP|MarioParty3(Costume).eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MarioParty3(Costume).eep" SelfReg="false" NextFile="MarioParty3.eep_1"/>
+    <ROW File="MarioParty3D0FB154C02_all.png" Component_="MarioParty32146C7BF02_all.png" FileName="MARIOP~3.PNG|MarioParty3#D0FB154C#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty3\MarioParty3#D0FB154C#0#2_all.png" SelfReg="false" NextFile="MarioParty3DA292EDB02_all.png"/>
+    <ROW File="MarioParty3DA292EDB02_all.png" Component_="MarioParty32146C7BF02_all.png" FileName="MARIOP~4.PNG|MarioParty3#DA292EDB#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty3\MarioParty3#DA292EDB#0#2_all.png" SelfReg="false" NextFile="MarioParty3E24ECAE402_all.png"/>
+    <ROW File="MarioParty3E24ECAE402_all.png" Component_="MarioParty32146C7BF02_all.png" FileName="MARIOP~5.PNG|MarioParty3#E24ECAE4#0#2_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty3\MarioParty3#E24ECAE4#0#2_all.png" SelfReg="false" NextFile="Jabo_Direct3D8.dll"/>
+    <ROW File="MarioPartyA5BFC10003_all.png" Component_="MarioParty1633C95403_all.png" FileName="MARIOP~3.PNG|MarioParty#A5BFC100#0#3_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty\MarioParty#A5BFC100#0#3_all.png" SelfReg="false" NextFile="MarioPartyABD7136703_all.png"/>
+    <ROW File="MarioPartyABD7136703_all.png" Component_="MarioParty1633C95403_all.png" FileName="MARIOP~4.PNG|MarioParty#ABD71367#0#3_all.png" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\hires_texture\MarioParty\MarioParty#ABD71367#0#3_all.png" SelfReg="false" NextFile="MarioParty26C306F3E02_all.png"/>
+    <ROW File="MarioTennis.eep" Component_="SNOWBOARDING.sra" FileName="MARIOT~1.EEP|MarioTennis.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\MarioTennis.eep" SelfReg="false" NextFile="MICKEYUSA.eep"/>
+    <ROW File="MarioTennis.eep_1" Component_="SNOWBOARDING.sra_1" FileName="MARIOT~1.EEP|MarioTennis.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\MarioTennis.eep" SelfReg="false" NextFile="MICKEYUSA.eep_1"/>
+    <ROW File="NRage.ini" Component_="netplay_input_plugin.ini" FileName="NRage.ini" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Input\NRage.ini" SelfReg="false" NextFile="Project64MPN.exe"/>
+    <ROW File="NRage_DInput.dll" Component_="NRage_DInput.dll" FileName="NRAGE_~1.DLL|NRage_DInput.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Input\NRage_DInput.dll" SelfReg="false" NextFile="NRage_DInput8_V2.dll"/>
+    <ROW File="NRage_DInput8_V2.dll" Component_="NRage_DInput8_V2.dll" FileName="NRAGE_~2.DLL|NRage_DInput8_V2.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Input\NRage_DInput8_V2.dll" SelfReg="false" NextFile="NRage_XInput.dll"/>
+    <ROW File="NRage_XInput.dll" Component_="NRage_XInput.dll" FileName="NRAGE_~3.DLL|NRage_XInput.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Input\NRage_XInput.dll" SelfReg="false" NextFile="RSP1.7.dll"/>
+    <ROW File="POKEMONSTADIUM.fla" Component_="SNOWBOARDING.sra" FileName="POKEMO~2.FLA|POKEMON STADIUM.fla" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\POKEMON STADIUM.fla" SelfReg="false" NextFile="PUZZLELEAGUEN64.fla"/>
+    <ROW File="POKEMONSTADIUM.fla_1" Component_="SNOWBOARDING.sra_1" FileName="POKEMO~2.FLA|POKEMON STADIUM.fla" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\POKEMON STADIUM.fla" SelfReg="false" NextFile="PUZZLELEAGUEN64.fla_1"/>
+    <ROW File="POKEMONSTADIUM2.fla" Component_="SNOWBOARDING.sra" FileName="POKEMO~1.FLA|POKEMON STADIUM 2.fla" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\POKEMON STADIUM 2.fla" SelfReg="false" NextFile="POKEMONSTADIUM.fla"/>
+    <ROW File="POKEMONSTADIUM2.fla_1" Component_="SNOWBOARDING.sra_1" FileName="POKEMO~1.FLA|POKEMON STADIUM 2.fla" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\POKEMON STADIUM 2.fla" SelfReg="false" NextFile="POKEMONSTADIUM.fla_1"/>
+    <ROW File="PUZZLELEAGUEN64.fla" Component_="SNOWBOARDING.sra" FileName="PUZZLE~1.FLA|PUZZLE LEAGUE N64.fla" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\PUZZLE LEAGUE N64.fla" SelfReg="false" NextFile="SMASHBROTHERS.sra"/>
+    <ROW File="PUZZLELEAGUEN64.fla_1" Component_="SNOWBOARDING.sra_1" FileName="PUZZLE~1.FLA|PUZZLE LEAGUE N64.fla" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\PUZZLE LEAGUE N64.fla" SelfReg="false" NextFile="SMASHBROTHERS.sra_1"/>
+    <ROW File="Project64.cfg" Component_="Project64.cfg" FileName="PROJEC~1.CFG|Project64.cfg" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Project64.cfg" SelfReg="false" NextFile="Project64.cht"/>
+    <ROW File="Project64.cht" Component_="Project64.cfg" FileName="PROJEC~1.CHT|Project64.cht" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Project64.cht" SelfReg="false" NextFile="Project64.rdb"/>
+    <ROW File="Project64.rdb" Component_="Project64.cfg" FileName="PROJEC~1.RDB|Project64.rdb" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Project64.rdb" SelfReg="false" NextFile="Project64.rdx"/>
+    <ROW File="Project64.rdx" Component_="Project64.cfg" FileName="PROJEC~1.RDX|Project64.rdx" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Project64.rdx" SelfReg="false" NextFile="EternalStarWarpMap.png"/>
+    <ROW File="Project64MPN.exe" Component_="Project64MPN.exe" FileName="PROJEC~1.EXE|Project64-MPN.exe" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Project64-MPN.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Project64Video.dll" Component_="Project64Video.dll" FileName="PROJEC~1.DLL|Project64-Video.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\Project64-Video.dll" SelfReg="false" NextFile="gliden64_de.Lang"/>
+    <ROW File="RSP1.7.dll" Component_="RSP1.7.dll" FileName="RSP17~1.DLL|RSP 1.7.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\RSP\RSP 1.7.dll" SelfReg="false" NextFile="z.dll"/>
+    <ROW File="Replace.bat" Component_="Replace.bat" FileName="Replace.bat" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Replace.bat" SelfReg="false" NextFile="SNOWBOARDING.sra_1"/>
+    <ROW File="SMASHBROTHERS.sra" Component_="SNOWBOARDING.sra" FileName="SMASHB~1.SRA|SMASH BROTHERS.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\SMASH BROTHERS.sra" SelfReg="false" NextFile="SMASHREMIX.sra"/>
+    <ROW File="SMASHBROTHERS.sra_1" Component_="SNOWBOARDING.sra_1" FileName="SMASHB~1.SRA|SMASH BROTHERS.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\SMASH BROTHERS.sra" SelfReg="false" NextFile="SMASHREMIX.sra_1"/>
+    <ROW File="SMASHREMIX.sra" Component_="SNOWBOARDING.sra" FileName="SMASHR~1.SRA|SMASH REMIX.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\SMASH REMIX.sra" SelfReg="false" NextFile="SNOWBOARDKIDS2.eep"/>
+    <ROW File="SMASHREMIX.sra_1" Component_="SNOWBOARDING.sra_1" FileName="SMASHR~1.SRA|SMASH REMIX.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\SMASH REMIX.sra" SelfReg="false" NextFile="SNOWBOARDKIDS2.eep_1"/>
+    <ROW File="SNOWBOARDING.sra" Component_="SNOWBOARDING.sra" FileName="1080SN~1.SRA|1080 SNOWBOARDING.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\1080 SNOWBOARDING.sra" SelfReg="false" NextFile="BANJOTOOIE.eep"/>
+    <ROW File="SNOWBOARDING.sra_1" Component_="SNOWBOARDING.sra_1" FileName="1080SN~1.SRA|1080 SNOWBOARDING.sra" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\1080 SNOWBOARDING.sra" SelfReg="false" NextFile="BANJOTOOIE.eep_1"/>
+    <ROW File="SNOWBOARDKIDS2.eep" Component_="SNOWBOARDING.sra" FileName="SNOWBO~1.EEP|SNOWBOARD KIDS2.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\SNOWBOARD KIDS2.eep" SelfReg="false" NextFile="STARWARSEP1RACER.eep"/>
+    <ROW File="SNOWBOARDKIDS2.eep_1" Component_="SNOWBOARDING.sra_1" FileName="SNOWBO~1.EEP|SNOWBOARD KIDS2.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\SNOWBOARD KIDS2.eep" SelfReg="false" NextFile="STARWARSEP1RACER.eep_1"/>
+    <ROW File="STARFOX64.eep" Component_="SNOWBOARDING.sra" FileName="STARFO~1.EEP|STARFOX64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\STARFOX64.eep" SelfReg="false" NextFile="WAVERACE64.eep"/>
+    <ROW File="STARFOX64.eep_1" Component_="SNOWBOARDING.sra_1" FileName="STARFO~1.EEP|STARFOX64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\STARFOX64.eep" SelfReg="false" NextFile="WAVERACE64.eep_1"/>
+    <ROW File="STARWARSEP1RACER.eep" Component_="SNOWBOARDING.sra" FileName="STARWA~1.EEP|STAR WARS EP1 RACER.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\STAR WARS EP1 RACER.eep" SelfReg="false" NextFile="STARFOX64.eep"/>
+    <ROW File="STARWARSEP1RACER.eep_1" Component_="SNOWBOARDING.sra_1" FileName="STARWA~1.EEP|STAR WARS EP1 RACER.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\STAR WARS EP1 RACER.eep" SelfReg="false" NextFile="STARFOX64.eep_1"/>
+    <ROW File="UpdateEmulator.bat" Component_="Replace.bat" FileName="UPDATE~1.BAT|UpdateEmulator.bat" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\UpdateEmulator.bat" SelfReg="false" NextFile="GLideN64.custom.ini"/>
+    <ROW File="WAVERACE64.eep" Component_="SNOWBOARDING.sra" FileName="WAVERA~1.EEP|WAVE RACE 64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\WAVE RACE 64.eep" SelfReg="false" NextFile="Project64.cfg"/>
+    <ROW File="WAVERACE64.eep_1" Component_="SNOWBOARDING.sra_1" FileName="WAVERA~1.EEP|WAVE RACE 64.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\WAVE RACE 64.eep" SelfReg="false" NextFile="UpdateEmulator.bat"/>
+    <ROW File="customrobo.eep" Component_="SNOWBOARDING.sra" FileName="CUSTOM~1.EEP|custom robo.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Config\Backup\custom robo.eep" SelfReg="false" NextFile="DiddyKongRacing.eep"/>
+    <ROW File="customrobo.eep_1" Component_="SNOWBOARDING.sra_1" FileName="CUSTOM~1.EEP|custom robo.eep" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Save\custom robo.eep" SelfReg="false" NextFile="DiddyKongRacing.eep_1"/>
+    <ROW File="data.xdelta3" Component_="data.xdelta3" FileName="DATA~1.XDE|data.xdelta3" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Extras\Mario Party 3 Costume Party v1.1 Patcher\data.xdelta3" SelfReg="false" NextFile="patch.bat"/>
+    <ROW File="filesthatshouldbeinhere.txt" Component_="filesthatshouldbeinhere.txt" FileName="FILEST~1.TXT|files that should be in here.txt" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Games\files that should be in here.txt" SelfReg="false" NextFile="AziAudioXA2.dll"/>
+    <ROW File="gliden64_de.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~1.LAN|gliden64_de.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_de.Lang" SelfReg="false" NextFile="gliden64_es.Lang"/>
+    <ROW File="gliden64_es.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~2.LAN|gliden64_es.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_es.Lang" SelfReg="false" NextFile="gliden64_fr.Lang"/>
+    <ROW File="gliden64_fr.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~3.LAN|gliden64_fr.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_fr.Lang" SelfReg="false" NextFile="gliden64_it.Lang"/>
+    <ROW File="gliden64_it.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~4.LAN|gliden64_it.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_it.Lang" SelfReg="false" NextFile="gliden64_ja.Lang"/>
+    <ROW File="gliden64_ja.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~5.LAN|gliden64_ja.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_ja.Lang" SelfReg="false" NextFile="gliden64_pl.Lang"/>
+    <ROW File="gliden64_pl.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~6.LAN|gliden64_pl.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_pl.Lang" SelfReg="false" NextFile="gliden64_pt_BR.Lang"/>
+    <ROW File="gliden64_pt_BR.Lang" Component_="gliden64_de.Lang" FileName="GLIDEN~7.LAN|gliden64_pt_BR.Lang" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\GFX\translations\gliden64_pt_BR.Lang" SelfReg="false" NextFile="netplay_input_plugin.dll"/>
+    <ROW File="netplay_input_plugin.dll" Component_="netplay_input_plugin.dll" FileName="NETPLA~1.DLL|netplay_input_plugin.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Input\netplay_input_plugin.dll" SelfReg="false" NextFile="NRage_DInput.dll"/>
+    <ROW File="netplay_input_plugin.ini" Component_="netplay_input_plugin.ini" FileName="NETPLA~1.INI|netplay_input_plugin.ini" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Input\netplay_input_plugin.ini" SelfReg="false" NextFile="NRage.ini"/>
+    <ROW File="patch.bat" Component_="data.xdelta3" FileName="patch.bat" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Extras\Mario Party 3 Costume Party v1.1 Patcher\patch.bat" SelfReg="false" NextFile="readme.txt"/>
+    <ROW File="readme.txt" Component_="data.xdelta3" FileName="readme.txt" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Extras\Mario Party 3 Costume Party v1.1 Patcher\readme.txt" SelfReg="false" NextFile="xdelta33.0.11i686.exe"/>
+    <ROW File="wget.exe" Component_="wget.exe" FileName="wget.exe" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Updater\wget.exe" SelfReg="false" NextFile="Replace.bat" DigSign="true"/>
+    <ROW File="xdelta33.0.11i686.exe" Component_="xdelta33.0.11i686.exe" FileName="XDELTA~1.EXE|xdelta3-3.0.11-i686.exe" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Extras\Mario Party 3 Costume Party v1.1 Patcher\xdelta3-3.0.11-i686.exe" SelfReg="false" NextFile="filesthatshouldbeinhere.txt" DigSign="true"/>
+    <ROW File="z.dll" Component_="z.dll" FileName="7z.dll" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Updater\7z.dll" SelfReg="false" NextFile="z.exe"/>
+    <ROW File="z.exe" Component_="z.exe" FileName="7z.exe" Attributes="0" SourcePath="project64-mpn-1-main (2)\project64-mpn-1-main\Plugin\Updater\7z.exe" SelfReg="false" NextFile="wget.exe" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\.mputils\Desktop" PackageFileName="Project64-MPN Setup" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" ExeIconPath="Project64-MPN.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;modern\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;modern\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;modern\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="SetupTypeDlg.aip" Path="&lt;AI_THEMES&gt;modern\fragments\SetupTypeDlg.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;modern\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;modern\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;modern\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;modern\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_XmlCommit" Description="Committing XML file configurations." Template="Committing XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlCommit" TemplateLocId="ActionText.Template.AI_XmlCommit"/>
+    <ROW Action="AI_XmlConfig" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlConfig" TemplateLocId="ActionText.Template.AI_XmlConfig"/>
+    <ROW Action="AI_XmlInstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlInstall"/>
+    <ROW Action="AI_XmlRemove" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlRemove" TemplateLocId="ActionText.Template.AI_XmlRemove"/>
+    <ROW Action="AI_XmlRollback" Description="Rolling back XML file configurations." Template="Rolling back XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlRollback" TemplateLocId="ActionText.Template.AI_XmlRollback"/>
+    <ROW Action="AI_XmlUninstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlUninstall"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="Project64MPN.ico" SourcePath="Project64-MPN.ico"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="xmlCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;xmlCfg.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="TypicalInstallButton" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="401"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="CompleteInstallButton" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL AND InstallMode=InstallModeComplete" Ordering="401"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeComplete" Ordering="203"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="101"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="202"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="CustomInstallButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL AND InstallMode=InstallModeCustom" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="102"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="204"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="AddRemoveButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="205"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="false"/>
+    <ROW Directory_="project64mpn_Dir" Component_="project64mpn" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ChooseTextStyles" Type="1" Source="aicustact.dll" Target="ChooseTextStyles"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Type="1" Source="aicustact.dll" Target="MixedAllUsersInstallLocation"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_XmlCommit" Type="11777" Source="xmlCfg.dll" Target="OnXmlCommit" WithoutSeq="true"/>
+    <ROW Action="AI_XmlConfig" Type="11265" Source="xmlCfg.dll" Target="OnXmlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_XmlInstall" Type="1" Source="xmlCfg.dll" Target="OnXmlInstall" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_XmlRemove" Type="11265" Source="xmlCfg.dll" Target="OnXmlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_XmlRollback" Type="11521" Source="xmlCfg.dll" Target="OnXmlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_XmlUninstall" Type="1" Source="xmlCfg.dll" Target="OnXmlUninstall" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AI_UserProgramFiles][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Project64MPN.exe" SourcePath="Project64-MPN.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_XmlInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5102"/>
+    <ROW Action="AI_DATA_SETTER" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_XmlUninstall" Condition="(REMOVE)" Sequence="3102"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="(REMOVE)" Sequence="3101"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER_2" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_DpiContentScale" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_ChooseTextStyles" Sequence="74"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /i [ProductCode]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /i [ProductCode]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="modern"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SoftwareIdentificationComponent">
+    <ATTRIBUTE name="LocalFile" value="regid.199509.com.example_ProductName.swidtag"/>
+    <ATTRIBUTE name="SystemFile" value="regid.199509.com.example_ProductName.swidtag_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlAttributeComponent">
+    <ROW XmlAttribute="xmlnsds" XmlElement="swidsoftware_identification_tag" Name="xmlns:ds" Flags="14" Order="0" Value="http://www.w3.org/2000/09/xmldsig#"/>
+    <ROW XmlAttribute="xmlnsswid" XmlElement="swidsoftware_identification_tag" Name="xmlns:swid" Flags="14" Order="1" Value="http://standards.iso.org/iso/19770/-2/2008/schema.xsd"/>
+    <ROW XmlAttribute="xmlnsxsi" XmlElement="swidsoftware_identification_tag" Name="xmlns:xsi" Flags="14" Order="2" Value="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ROW XmlAttribute="xsischemaLocation" XmlElement="swidsoftware_identification_tag" Name="xsi:schemaLocation" Flags="14" Order="3" Value="http://standards.iso.org/iso/19770/-2/2008/schema.xsd software_identification_tag.xsd"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlElementComponent">
+    <ROW XmlElement="swidbuild" ParentElement="swidnumeric" Name="swid:build" Condition="1" Order="2" Flags="14" Text="0"/>
+    <ROW XmlElement="swidentitlement_required_indicator" ParentElement="swidsoftware_identification_tag" Name="swid:entitlement_required_indicator" Condition="1" Order="0" Flags="14" Text="false"/>
+    <ROW XmlElement="swidmajor" ParentElement="swidnumeric" Name="swid:major" Condition="1" Order="0" Flags="14" Text="1"/>
+    <ROW XmlElement="swidminor" ParentElement="swidnumeric" Name="swid:minor" Condition="1" Order="1" Flags="14" Text="0"/>
+    <ROW XmlElement="swidname" ParentElement="swidproduct_version" Name="swid:name" Condition="1" Order="0" Flags="14" Text="[ProductVersion]"/>
+    <ROW XmlElement="swidname_4" ParentElement="swidsoftware_creator" Name="swid:name" Condition="1" Order="0" Flags="14" Text="[Manufacturer]"/>
+    <ROW XmlElement="swidname_5" ParentElement="swidsoftware_licensor" Name="swid:name" Condition="1" Order="0" Flags="14" Text="[Manufacturer]"/>
+    <ROW XmlElement="swidname_6" ParentElement="swidtag_creator" Name="swid:name" Condition="1" Order="0" Flags="14" Text="[Manufacturer]"/>
+    <ROW XmlElement="swidnumeric" ParentElement="swidproduct_version" Name="swid:numeric" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="swidproduct_title" ParentElement="swidsoftware_identification_tag" Name="swid:product_title" Condition="1" Order="1" Flags="14" Text="[ProductName]"/>
+    <ROW XmlElement="swidproduct_version" ParentElement="swidsoftware_identification_tag" Name="swid:product_version" Condition="1" Order="2" Flags="14"/>
+    <ROW XmlElement="swidregid" ParentElement="swidsoftware_creator" Name="swid:regid" Condition="1" Order="1" Flags="14" Text="project64-mpn"/>
+    <ROW XmlElement="swidregid_3" ParentElement="swidsoftware_licensor" Name="swid:regid" Condition="1" Order="1" Flags="14" Text="project64-mpn"/>
+    <ROW XmlElement="swidregid_4" ParentElement="swidtag_creator" Name="swid:regid" Condition="1" Order="1" Flags="14" Text="project64-mpn"/>
+    <ROW XmlElement="swidreview" ParentElement="swidnumeric" Name="swid:review" Condition="1" Order="3" Flags="14" Text="0"/>
+    <ROW XmlElement="swidsoftware_creator" ParentElement="swidsoftware_identification_tag" Name="swid:software_creator" Condition="1" Order="3" Flags="14"/>
+    <ROW XmlElement="swidsoftware_id" ParentElement="swidsoftware_identification_tag" Name="swid:software_id" Condition="1" Order="5" Flags="14"/>
+    <ROW XmlElement="swidsoftware_identification_tag" Name="swid:software_identification_tag" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="swidsoftware_licensor" ParentElement="swidsoftware_identification_tag" Name="swid:software_licensor" Condition="1" Order="4" Flags="14"/>
+    <ROW XmlElement="swidtag_creator" ParentElement="swidsoftware_identification_tag" Name="swid:tag_creator" Condition="1" Order="6" Flags="14"/>
+    <ROW XmlElement="swidtag_creator_regid" ParentElement="swidsoftware_id" Name="swid:tag_creator_regid" Condition="1" Order="1" Flags="14" Text="project64-mpn"/>
+    <ROW XmlElement="swidunique_id" ParentElement="swidsoftware_id" Name="swid:unique_id" Condition="1" Order="0" Flags="14" Text="project64-mpn"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlFileComponent">
+    <ROW XmlFile="regid.199509.com.example_ProductName.swidtag" FileName="PROJEC~1.SWI|project64-mpn_project64-mpn.swidtag" DirProperty="APPDIR" Component="ProductInformation" RootElement="swidsoftware_identification_tag" Flags="25" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+    <ROW XmlFile="regid.199509.com.example_ProductName.swidtag_1" FileName="PROJEC~1.SWI|project64-mpn_project64-mpn.swidtag" DirProperty="project64mpn_Dir" Component="ProductInformation" RootElement="swidsoftware_identification_tag" Flags="25" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+</DOCUMENT>
