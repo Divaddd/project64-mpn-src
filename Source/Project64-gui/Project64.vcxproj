@@ -36,10 +36,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin/$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build/$(ProjectName)\</IntDir>
-    <TargetName>Project64-MPN</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>Project64-MPN</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
