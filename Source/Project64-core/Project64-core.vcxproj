@@ -127,6 +127,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\project64-mpn\Source\Project64-core\3rdParty\mario_party_netplay.h" />
     <ClInclude Include="..\3rdParty\zlib\contrib\minizip\unzip.h" />
     <ClInclude Include="..\3rdParty\zlib\contrib\minizip\zip.h" />
     <ClInclude Include="..\3rdParty\zlib\zconf.h" />
@@ -239,5 +240,8 @@
       <Project>{3326e128-33af-422c-bb7c-67cc6b915610}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Common\Common.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

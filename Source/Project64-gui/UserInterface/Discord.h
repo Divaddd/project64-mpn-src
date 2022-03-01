@@ -17,4 +17,17 @@ public:
     static void Init(void);
     static void Shutdown(void);
     static void Update(bool bHaveGame = true);
+
+    static uint8_t m_DiscordCurrentPlayers;
+    static int64_t m_DiscordNextPost;
+    static bool    m_DiscordSendPresence;
+    static int64_t m_DiscordStartTime;
+
+    static void getMk64Rps(uint8_t* Rdram, DiscordRichPresence& discordPresence);
+    static void    getMp1Rps(uint8_t* Rdram, DiscordRichPresence& discordPresence);
+    static void    getMp2Rps(uint8_t* Rdram, DiscordRichPresence& discordPresence);
+    static void    getMp3Rps(uint8_t* Rdram, DiscordRichPresence& discordPresence);
+    static void    getSsbRps(uint8_t* Rdram, DiscordRichPresence& discordPresence);
+    static void    getNumberControllers();
 };
+

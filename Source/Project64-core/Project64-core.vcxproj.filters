@@ -576,5 +576,11 @@
     <ClInclude Include="RomList\RomList.h">
       <Filter>Rom List</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\project64-mpn\Source\Project64-core\3rdParty\mario_party_netplay.h">
+      <Filter>3rd Party</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
